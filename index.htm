@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic-Tac-Toe | </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-circle circle-one"></div>
+    <div class="background-circle circle-two"></div>
+
+    <main class="game-container">
+
+        <div class="header">
+            <p class="task"></p>
+
+            <h1>Tic-Tac-Toe</h1>
+
+            <p class="subtitle">
+                Web Development Internship • Task 03
+            </p>
+        </div>
+
+        <!-- Game Mode -->
+
+        <div class="mode-selection">
+
+            <button id="playerMode" class="mode-btn active">
+                👥 Player vs Player
+            </button>
+
+            <button id="aiMode" class="mode-btn">
+                🤖 Player vs AI
+            </button>
+
+        </div>
+
+        <!-- Score -->
+
+        <div class="score-board">
+
+            <div class="score">
+                <span id="playerOneLabel">Player X</span>
+                <strong id="scoreX">0</strong>
+            </div>
+
+            <div class="score">
+                <span>Draws</span>
+                <strong id="scoreDraw">0</strong>
+            </div>
+
+            <div class="score">
+                <span id="playerTwoLabel">Player O</span>
+                <strong id="scoreO">0</strong>
+            </div>
+
+        </div>
+
+        <!-- Turn -->
+
+        <div class="turn-display" id="turnDisplay">
+            Player X's Turn
+        </div>
+
+        <!-- Game Board -->
+
+        <div class="game-board" id="gameBoard">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </div>
+
+        <!-- Result -->
+
+        <div class="result" id="result"></div>
+
+        <!-- Restart -->
+
+        <button class="restart-btn" id="restartBtn">
+            🔄 Restart Game
+        </button>
+
+    </main>
+
+    <footer>
+        <p>• Web Development Internship</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
